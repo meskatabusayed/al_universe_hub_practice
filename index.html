@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Universe</title>
+    <!-- links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontAwesome link -->
+    <script src="https://kit.fontawesome.com/bc9df52b70.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="my-10">
+    <h3 class="text-center text-3xl font-bold">AI Universe Hub</h3>
+    <div class="text-center my-6">
+        <button class="btn btn-error text-white">Sort By Date</button>
+    </div>
+    
+  </header> 
+  <main class="container mx-auto mt-8">
+    
+    <!-- card section -->
+        <section>
+          <div id="ai-container" class="grid gap-12  grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          
+          </div>
+        </section>
+        <!-- See more section -->
+        <div class="text-center my-6">
+          <button onclick="handleShowAll()" class="btn btn-error text-white">See More</button>
+      </div>
+
+
+      <!-- show modal -->
+      <!-- You can open the modal using ID.showModal() method -->
+      
+      <dialog id="show_modal_details" class="modal">
+      <form method="dialog" class="modal-box">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-red-600">✕</button>
+      <h3 class="font-bold text-lg">Hello!</h3>
+      <p class="py-4">Press ESC key or click on ✕ button to close</p>
+      </form>
+      </dialog>
+
+
+    </main>
+  <footer>
+
+  </footer>
+<script src="./js/script.js"></script>
+</body>
+</html>
